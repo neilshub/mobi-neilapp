@@ -1,0 +1,11 @@
+version: "3.8"
+services:
+  neilappfinal:
+    image: neilcustomer1:v1
+    build: .
+    container_name: neilcc001
+    ports:
+    - "1033:80"
+    restart: always
+    environment:
+      deploy: "app2"
